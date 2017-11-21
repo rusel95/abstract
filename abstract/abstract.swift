@@ -17,4 +17,8 @@ public class Abstract {
     public static func secondFunction() {
         print("ajskdf;lkajsd;fljadsjf;lkjcxv;lkjq;lfja;ldjf;laskjfads;fkj")
     }
+    
+    public static func func3() {
+        print("asdlfja;sldfkjas;ldjadsf")
+    }
 }
