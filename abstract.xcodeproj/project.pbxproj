@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		847655051FC4496200018841 /* abstract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847655041FC4496200018841 /* abstract.swift */; };
 		849B2DE51FC4489C0030DD05 /* abstract.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 849B2DDB1FC4489C0030DD05 /* abstract.framework */; };
 		849B2DEA1FC4489C0030DD05 /* abstractTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849B2DE91FC4489C0030DD05 /* abstractTests.swift */; };
 		849B2DEC1FC4489C0030DD05 /* abstract.h in Headers */ = {isa = PBXBuildFile; fileRef = 849B2DDE1FC4489C0030DD05 /* abstract.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -23,6 +24,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		847655041FC4496200018841 /* abstract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = abstract.swift; sourceTree = "<group>"; };
 		849B2DDB1FC4489C0030DD05 /* abstract.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = abstract.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		849B2DDE1FC4489C0030DD05 /* abstract.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = abstract.h; sourceTree = "<group>"; };
 		849B2DDF1FC4489C0030DD05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -72,6 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				849B2DDE1FC4489C0030DD05 /* abstract.h */,
+				847655041FC4496200018841 /* abstract.swift */,
 				849B2DDF1FC4489C0030DD05 /* Info.plist */,
 			);
 			path = abstract;
@@ -148,6 +151,7 @@
 				TargetAttributes = {
 					849B2DDA1FC4489C0030DD05 = {
 						CreatedOnToolsVersion = 9.1;
+						LastSwiftMigration = 0910;
 						ProvisioningStyle = Automatic;
 					};
 					849B2DE31FC4489C0030DD05 = {
@@ -196,6 +200,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				847655051FC4496200018841 /* abstract.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -334,6 +339,7 @@
 		849B2DF01FC4489C0030DD05 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -346,6 +352,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.rusel95.abstract;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -354,6 +361,7 @@
 		849B2DF11FC4489C0030DD05 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -374,6 +382,7 @@
 		849B2DF31FC4489C0030DD05 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = abstractTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -387,6 +396,7 @@
 		849B2DF41FC4489C0030DD05 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = abstractTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
